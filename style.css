@@ -647,7 +647,7 @@ footer{
 
 @media (max-width: 404px){
     .project-container{
-        margin-bottom: -100px;
+        margin-bottom: 0px;
     }
 
     .frame-phone{
