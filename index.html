@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <title>Lukáš Pískovský</title>
 </head>
 <body>
@@ -162,9 +164,14 @@
         </section>
 
         <section id="contacts" class="background-box">
-            <h2 class="section-heading">Kontakt</h2>
-            <form action="">
-
+            <h2 class="section-heading contact-heading">Kontakt</h2>
+            <h3 id="form-heading">Pojďme spolu tvořit zajímavé projekty</h3>
+            <form action="https://formspree.io/f/xrbqjeky" method="POST" class="my-form">
+                <input type="text" name="name" id="name" placeholder="Vaše jméno" class="form-show" required>
+                <input type="email" name="email" id="email" placeholder="Váš Email" class="form-show" required>
+                <textarea name="message" id="message" placeholder="Vaše zpráva..." class="form-show"></textarea>
+                <label for="agreement" class="form-show">Souhlasím se zpracováním<a href="ochrana-osobnich-udaju.html">osobních údajů</a><input type="checkbox" name="agreement" id="agreement" class="form-show" required></label>
+                <input type="submit" value="Odeslat" id="form-button">
             </form>
 
         </section>

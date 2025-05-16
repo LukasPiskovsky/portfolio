@@ -147,61 +147,35 @@ setTimeout(()=>{
     })
 }, 2000)
 
-/**Projects**/
 
-// let projects = [
-//     {
-//         heading:"KINGSMAN",
-//         about:"Ilustrační stránka pro barbershop",
-//         url:"lukaspiskovsky.github.io/kingsman/",
-//         pcImage:["img/barberPC1.png", "img/barberPC2.png", "img/barberPC3.png"],
-//         tabletImage:["img/barberTablet1.png", "img/barberTablet2.png", "img/barberTablet3.png"],
-//         phoneImage:"",
-//         features: [
-//             {
-//                 icon:"",
-//                 featureName:""
-//             }
-//         ]
-//     },
-//     {
-//         heading:"",
-//         about:"",
-//         url:"",
-//         pcImage:"",
-//         tabletImage:"",
-//         phoneImage:"",
-//         features: [
-//             {
-//                 icon:"",
-//                 featureName:""
-//             }
-//         ]
-//     },
-//     {
-//         heading:"",
-//         about:"",
-//         url:"",
-//         pcImage:"",
-//         tabletImage:"",
-//         phoneImage:"",
-//         features: [
-//             {
-//                 icon:"",
-//                 featureName:""
-//             }
-//         ]
-//     }
-// ]
+//GSAP animation
+gsap.registerPlugin(ScrollTrigger);
 
-// let screenImg = [
-//     {
-//         pc:""
-//     },
-//     {
-//         tablet:""
-//     },
-//     {
-//         phone:""
-//     }
-// ]
+//form animation
+gsap.set(".my-form",{scale:0, opacity:0});
+gsap.to(".my-form",{
+    scrollTrigger:{
+        trigger: ".contact-heading",
+        start: "top 50%",
+        end: "top 30%",
+        toggleActions: "play none none reverse",
+        scrub:true,
+    },
+    scale:1,
+    opacity:1
+})
+
+//form heading aniamtion
+gsap.set("#form-heading", { x: -500, opacity: 0 });
+gsap.to("#form-heading",{
+    scrollTrigger:{
+        trigger: ".contact-heading",
+        start: "top 60%",
+        end: "top 40%",
+        toggleActions: "play none none reverse",
+        scrub:true
+    },
+    x:0,
+    opacity:1,
+    duration:1
+})
