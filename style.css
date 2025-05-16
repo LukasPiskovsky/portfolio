@@ -33,7 +33,6 @@ h1, h2, h3{
 
 .background-box{
     background-color: var(--bg-color);
-    padding:20px 0px;
     border-radius: 10px;
 }
 
@@ -46,6 +45,10 @@ h1, h2, h3{
     z-index: 4;
     border-radius: 0 5px 5px 0;
     transition: all 0.3s ease-out;
+}
+
+section h2{
+    padding-top: 25px;
 }
 
 /**HEADER**/
@@ -464,12 +467,16 @@ article{
 .ivelek-icon{
     background-color: #15353383;
 }
+
+article:last-of-type{
+    border-radius: 0 0 10px 10px;
+}
 /**Footer**/
 
 #contacts{
     height:100svh;
     min-height: fit-content;
-    background-color: #111;
+    background: linear-gradient(#222, #111) ;
     z-index: 2;
 }
 
@@ -481,12 +488,12 @@ form{
     width:80%;
     margin:0 auto;
     padding: 20px;
-    gap:10px;
+    gap:15px;
 
 }
 #form-heading{
     color: var(--highlight-color);
-    padding:30px;
+    padding:45px 30px 30px 30px;
     width:100%;
     text-align: center;
 }
@@ -566,6 +573,10 @@ footer{
     }
     .background-box{
         border-radius: 0px;
+    }
+
+    article:last-of-type{
+    border-radius: 0px;
     }
 
 }

@@ -170,7 +170,7 @@ gsap.set("#form-heading", { x: -500, opacity: 0 });
 gsap.to("#form-heading",{
     scrollTrigger:{
         trigger: ".contact-heading",
-        start: "top 80%",
+        start: "top 85%",
         end: "top 40%",
         toggleActions: "play none none reverse",
         scrub:true
