@@ -173,8 +173,7 @@ gsap.to("#form-heading",{
         start: "top 80%",
         end: "top 40%",
         toggleActions: "play none none reverse",
-        scrub:true,
-        markers: true
+        scrub:true
     },
     x:0,
     opacity:1,
