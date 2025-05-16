@@ -156,7 +156,7 @@ gsap.set(".my-form",{scale:0, opacity:0});
 gsap.to(".my-form",{
     scrollTrigger:{
         trigger: ".contact-heading",
-        start: "top 50%",
+        start: "top 65%",
         end: "top 30%",
         toggleActions: "play none none reverse",
         scrub:true,
@@ -170,10 +170,11 @@ gsap.set("#form-heading", { x: -500, opacity: 0 });
 gsap.to("#form-heading",{
     scrollTrigger:{
         trigger: ".contact-heading",
-        start: "top 60%",
+        start: "top 80%",
         end: "top 40%",
         toggleActions: "play none none reverse",
-        scrub:true
+        scrub:true,
+        markers: true
     },
     x:0,
     opacity:1,
